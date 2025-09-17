@@ -20,6 +20,21 @@
         <a href="/contact.html">Contact</a>
     </nav>
 </header>
+     <!-- Circle chatbot button -->
+  <div id="chatbot-button" onclick="toggleChatbot()">💬</div>
+
+  <!-- Chatbot box (hidden at first) -->
+  <div id="chatbot-box">
+    <div id="chat-header">
+      <span>AI Chatbot</span>
+    </div>
+    <div id="chat-log"></div>
+    <div id="chat-input-area">
+      <input type="text" id="user-input" placeholder="Type a message...">
+      <button onclick="sendMessage()">Send</button>
+    </div>
+  </div>
+
     <div class="carousel">
         <div class="list">
             <div class="item">
@@ -431,6 +446,7 @@
     <div class="footer-bottom">
         <p>Information Technology University    , Lahore</p>
         <p>&copy; 2025 — Copyright  ||   Made By Ubaid Ahmad</p>
+        <p id="footer-date"></p>
     </div>
     </footer>
 
